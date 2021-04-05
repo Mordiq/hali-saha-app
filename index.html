@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" href="./style/form.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- <script type="text/javascript" src="css/javascript.js"></script> -->
+    <script src="./scripts/dropmenu.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
+</head>
+
+<body>
+    <!--   KMENÜ DİV KODLARI -->
+    <div class="main">
+
+        <div class="menu_resim" style="background-image: url(assets/img/1.png);">
+            <div class="menu_bar">
+                <div class="logo">
+                    <img src="assets/img/logo.png" />
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">İletişim</a></li>
+                        <li><a href="#">Nasıl Çalışır</a></li>
+                    </ul>
+                </div>
+                <div class="kullanıcı-logo">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">
+                            <i id="baba" class="las la-bars"></i>
+                            <i id="bobo" class="fas fa-user-circle"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#" id="kullanici-giris-link">Kullanıcı Giriş</a>
+                            <a href="#" id="halisaha-giris-link">Halı Saha Giriş</a>
+                            <a href="#" id="kullanici-kayit-link">Kayıt Ol</a>
+                            <a href="#" id="halisaha-kayit-link">Halı Saha Kaydı</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="arama-input" name="arama" placeholder="Şehrinizi Girin">
+                <div class="arama-button">
+                    <i class="las la-search" id="arama-icon"></i>
+                </div>
+            </div>
+            <p>Maçınızı <br> yakında yapın!</p>
+        </div>
+
+
+        <!--   SEHİRLER DİV KODLARI -->
+
+
+        <div class="sehirler">
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/izmir.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">İzmir</p>
+                        <p class="sehirler-kullanıcı">8 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/ankara.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Ankara</p>
+                        <p class="sehirler-kullanıcı">9 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/istanbul.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">İstanbul</p>
+                        <p class="sehirler-kullanıcı">4 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/canakkale.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Çanakkale</p>
+                        <p class="sehirler-kullanıcı">5 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/bursa.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Bursa</p>
+                        <p class="sehirler-kullanıcı">6 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/antalya.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Antalya</p>
+                        <p class="sehirler-kullanıcı">7 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/tekirdag.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Tekirdağ</p>
+                        <p class="sehirler-kullanıcı">7 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sehirler-orta">
+                <div class="sehirler-icerik">
+                    <div class="sehirler-resim ">
+                        <img src="assets/img/trabzon.png" />
+                    </div>
+                    <div class="sehirler-yazı ">
+                        <p class="sehirler-isim">Trabzon</p>
+                        <p class="sehirler-kullanıcı">4 Kayıtlı Saha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--   OZELLİKLERİ DİV KODLARI -->
+
+        <div class="ozellikler">
+            <p class="ozellikler-baslık">Dilediğiniz Özelliği Tercih Edin</p>
+            <div class="ozellikler-orta">
+                <div class="ozellikler-icerik">
+                    <img src="assets/img/soyunma_odasi2.png" />
+                    <p>Soyunma Odası</p>
+                </div>
+            </div>
+            <div class="ozellikler-orta">
+                <div class="ozellikler-icerik">
+                    <img src="assets/img/cafe2.png" />
+                    <p>Kafeterya</p>
+                </div>
+            </div>
+            <div class="ozellikler-orta">
+                <div class="ozellikler-icerik">
+                    <img src="assets/img/malzeme2.png" />
+                    <p>Ekipman</p>
+                </div>
+            </div>
+            <div class="ozellikler-orta">
+                <div class="ozellikler-icerik">
+                    <img src="assets/img/zemin2.png" />
+                    <p>Zemin</p>
+                </div>
+            </div>
+        </div>
+        <!--   Saha DİV KODLARI -->
+
+        <div class="sahalar">
+            <p class="sahalar-baslık">Popüler Sahalar</p><br>
+            <p class="sahalar-baslık2">Arkadaşlarınızla benzersiz deneyimler</p>
+            <div class="sahalar-orta">
+                <div class="sahalar-icerik">
+                    <img src="assets/img/saha-1.png" />
+                    <p>Santra</p>
+                    <p>Tekirdağ/Malkara</p>
+                </div>
+            </div>
+            <div class="sahalar-orta">
+                <div class="sahalar-icerik">
+                    <img src="assets/img/saha-2.png" />
+                    <p>Muntaş</p>
+                    <p>Kırklareli/Lüleburgaz</p>
+                </div>
+            </div>
+            <div class="sahalar-orta">
+                <div class="sahalar-icerik">
+                    <img src="assets/img/saha-3.png" />
+                    <p>Dardanel</p>
+                    <p>Çanakkale/Merkez</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--   KAYIT DİV KODLARI -->
+
+        <div class="kayıt">
+            <p class="kayıt-baslık">Tutkuya Katılın</p><br>
+            <div class="kayıt-orta">
+                <div class="kayıt-icerik">
+                    <img src="assets/img/kayitol.png" />
+                    <p class="kayıt-icerik">Kayıt Ol</p>
+                </div>
+            </div>
+            <div class="kayıt-orta">
+                <div class="kayıt-icerik">
+                    <img src="assets/img/takimini-kur.png" />
+                    <p class="kayıt-icerik">Takımını Kur</p>
+                </div>
+            </div>
+            <div class="kayıt-orta">
+                <div class="kayıt-icerik">
+                    <img src="assets/img/randevual2.jpg" />
+                    <p class="kayıt-icerik">Randevu al</p>
+                </div>
+            </div>
+        </div>
+
+        <!--   KULLANICIDİV KODLARI -->
+
+        <div class="kullanıcı">
+            <div class="kullanıcı-orta">
+                <div class="kullanıcı-icerik">
+                    <p>
+                        © 2021 HULL, Inc.&emsp;· &emsp;Anasayfa&emsp; ·&emsp; Halı Saha Kayıt&emsp; · &emsp;Kullanıcı
+                        Kayıt
+                        &emsp;· &emsp;Hakkımızda&emsp; · &emsp;İletişim</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Bu Alanda Formlar Olacak.-->
+
+    <!--Kullanıcı Kayıt Formu Başlangıç-->
+
+    <div class="kullanici-kayit-form-arkaplan" id="kullanici-kayit-form-arkaplan">
+        <div class="kullanici-kayit-form">
+            <div class="kullanici-formu-kapat-icon" id="kapat">
+                <i class="las la-times" id="kapat-icon"></i>
+            </div>
+            <p class="form-baslik">
+                Kaydolun
+            </p>
+
+            <input type="text" class="adi-soyadi" placeholder="Adınız Soyadınız" id="adisoyadi">
+            <input type="email" class="e-mail" placeholder="E-mail" id="email">
+            <input type="password" class="sifre" placeholder="Şifre" id="sifre">
+            <div class="kullanici-adi-container">
+                <p class="kullanici-adi-text">@</p>
+                <input type="text" class="kullanici-adi" placeholder="Kullanıcı Adınız" id="kullaniciadi">
+            </div>
+            <button class="kullanici-kayit-button" id="kullaniciKayitButton">Tamamla</button>
+        </div>
+    </div>
+
+    <!--Kullanıcı Kayıt Formu Bitiş-->
+
+
+    <!--Kullanıcı Giriş Formu Başlangıç-->
+
+    <div class="kullanici-giris-form-arkaplan" id="kullanici-giris-form-arkaplan">
+        <div class="kullanici-giris-form">
+            <div class="kullanici-formu-kapat-icon" id="kapat">
+                <i class="las la-times" id="kapat-icon"></i>
+            </div>
+            <p class="form-baslik">
+                Giriş
+            </p>
+
+            <input type="email" class="email" placeholder="E-mail" id="giris-email">
+            <input type="password" class="sifre" placeholder="Şifre" id="giris-sifre">
+            <button class="kullanici-kayit-button" id="kullaniciGirisButton">Giriş Yap</button>
+        </div>
+    </div>
+
+    <!--Kullanıcı Giriş Formu Bitiş-->
+
+
+    <!--HalıSaha Kayıt Formu Başlangıç-->
+
+    <div class="hali-saha-kayit-form-arkaplan" id="hali-saha-kayit-form-arkaplan">
+        <div class="hali-saha-kayit-form">
+            <div class="hali-saha-formu-kapat-icon" id="kapat">
+                <i class="las la-times" id="kapat-icon"></i>
+            </div>
+            <p class="form-baslik">
+                Halı Saha Kayıt
+            </p>
+
+            <input type="text" class="hali-saha-adi" placeholder="Halı Saha Adı" id="sahaadi">
+            <input type="email" class="e-mail" placeholder="E-mail" id="saha-email">
+            <input type="password" class="sifre" placeholder="Şifre" id="saha-sifre">
+            <input type="text" class="hali-saha-adi" placeholder="Adres" id="adres">
+            <input type="text" class="hali-saha-adi" placeholder="Açıklama" id="aciklama">
+
+            <div class="secenekler" id="secenekler-div">
+                <!-- <div class="kontrol-kutu">
+                    <label class="container">
+                        <p class="checkbox-text">Soyunma Odası</p>
+                        <input type="checkbox" id="soyunmaodasi-check" class="ozellik-check-input">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="kontrol-kutu">
+                    <label class="container">
+                        <p class="checkbox-text">Kafeterya</p>
+                        <input type="checkbox" id="kafeterya-check" class="ozellik-check-input">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="kontrol-kutu">
+                    <label class="container">
+                        <p class="checkbox-text">Ekipman</p>
+                        <input type="checkbox" id="ekipman-check" class="ozellik-check-input">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="kontrol-kutu">
+                    <label class="container">
+                        <p class="checkbox-text">Lüks Zemin</p>
+                        <input type="checkbox" id="lukszemin-check" class="ozellik-check-input">
+                        <span class="checkmark"></span>
+                    </label>
+                </div> -->
+            </div>
+
+            <select id="sehirler-secim">
+                <option>Şehir Seç</option>
+            </select>
+
+            <select id="ilceler-secim">
+                <option>İlçe Seç</option>
+            </select>
+
+            <div class="upload-images">
+                <div class="file-upload">
+                    <input type="file" id="upload-image" />
+                    <i class="las la-plus" id="upload-icon"></i>
+                </div>
+
+                <div class="image1" id="img1-div"></div>
+                <div class="image2" id="img2-div"></div>
+            </div>
+
+
+
+            <button class="hali-saha-kayit-button" id="haliSahaKayitButton">Tamamla</button>
+        </div>
+    </div>
+    <!--Halısaha Kayıt Formu Bitiş-->
+
+
+    <!--Halısaha Giriş Formu Başlangıç-->
+    <div class="hali-saha-giris-form-arkaplan" id="hali-saha-giris-form-arkaplan">
+        <div class="hali-saha-giris-form">
+            <div class="hali-saha-giris-formu-kapat-icon" id="kapat">
+                <i class="las la-times" id="kapat-icon"></i>
+            </div>
+            <p class="form-baslik">
+                Halı Saha Giriş
+            </p>
+
+            <input type="email" class="email" placeholder="E-mail" id="halisaha-giris-email">
+            <input type="password" class="sifre" placeholder="Şifre" id="halisaha-giris-sifre">
+            <button class="hali-saha-giris-button" id="haliSahaGirisButton">Giriş Yap</button>
+        </div>
+    </div>
+    <!--Halısaha Giriş Formu Bitiş-->
+
+
+    <!--Bu Alanda Formlar Olacak.-->
+
+</body>
+
+</html>
