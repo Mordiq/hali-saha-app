@@ -1540,7 +1540,7 @@ function dosyalariGetir() {
 
 function resimleriYukle(fileForm, file) {
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost/HaliSahaUygulamasi/backend/image_upload.php", true);
+    xhr.open("POST", "./backend/image_upload.php", true);
     xhr.send(fileForm);
 
     //Yüklenen resim link olarak image src olarka verilecek.
@@ -1592,7 +1592,7 @@ function sahaKayit() {
     formData.append("adres", adres);
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost/HaliSahaUygulamasi/backend/saha-kayit.php", true);
+    xhr.open("POST", "./backend/saha-kayit.php", true);
     xhr.send(formData);
 
     xhr.onload = function () {

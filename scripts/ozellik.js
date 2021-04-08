@@ -6,7 +6,7 @@ export async function ozellikleriGetir() {
 
     var oReq = new XMLHttpRequest();
     //oReq.addEventListener("load", sonuc);
-    oReq.open("GET", "http://localhost/HaliSahaUygulamasi/backend/ozellikleri-getir.php");
+    oReq.open("GET", "./backend/ozellikleri-getir.php");
     oReq.send();
 
     oReq.onload = function () {

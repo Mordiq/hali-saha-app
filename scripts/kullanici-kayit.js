@@ -14,7 +14,7 @@ export function kullaniciKayit(adiSoyadi, email, sifre, kullaniciAdi) {
     console.log(formData);
     //kapat();
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost/Hali-Saha-Uygulamasi/backend/kullanici-kayit.php", true);
+    xhr.open("POST", "./backend/kullanici-kayit.php", true);
     xhr.send(formData);
 
     xhr.onload = function () {

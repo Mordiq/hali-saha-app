@@ -16,7 +16,7 @@ export function giris(email, sifre) {
     console.log(email + " " + sifre);
     //kapat();
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost/Hali-Saha-Uygulamasi/backend/kullanici-giris.php", true);
+    xhr.open("POST", "./backend/kullanici-giris.php", true);
     xhr.send(formData);
 
     xhr.onload = function () {
@@ -24,7 +24,7 @@ export function giris(email, sifre) {
         var res = this.response;
         if (res == "true") {
             //Buraya Uygulamanın Arama Sayfası linki verilecek.
-            window.location.replace("http://localhost/HaliSahaUygulamasi/pages/sonuc.html");
+            window.location.replace("./pages/sonuc.html");
         }
     };
 }

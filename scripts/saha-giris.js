@@ -11,7 +11,7 @@ export function sahaGiris() {
     form.append("sahamail", sahamail);
     form.append("sahasifre", sahasifre);
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost/Hali-Saha-Uygulamasi/backend/saha-giris.php", true);
+    xhr.open("POST", "./backend/saha-giris.php", true);
     xhr.send(form);
 
     xhr.onload = function () {
@@ -19,7 +19,7 @@ export function sahaGiris() {
         var res = this.response;
         if (res == "true") {
             //Buraya Uygulamanın Arama Sayfası linki verilecek.
-            window.location.replace("http://localhost/HaliSahaUygulamasi/pages/sahayonetim.html");
+            window.location.replace("./pages/sahayonetim.html");
 
         }
     };
