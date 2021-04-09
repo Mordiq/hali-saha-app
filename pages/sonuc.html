@@ -11,7 +11,8 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="../scripts/dropmenu.js"></script>
+    <script type="text/javascript" src="../src/dropmenu.js"></script>
+    <script type="module" src="../src/result.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         </div>
 
         <div class="search-bar">
-            <input type="text" class="arama-input" name="arama" placeholder="Şehrinizi Arayın">
+            <input id="search-input" type="text" class="arama-input" name="arama" placeholder="Şehrinizi Arayın">
             <div class="arama-button">
                 <i class="las la-search" id="arama-icon"></i>
             </div>
@@ -56,8 +57,8 @@
             </div>
 
             <main>
-                <section class="cards">
-                    <div class="card">
+                <section class="cards" id="card-list">
+                    <!-- <div class="card">
                         <div class="card__image-container">
                             <img src="../assets/images/2.jpg" alt="saha resmi" />
                         </div>
@@ -246,7 +247,7 @@
                                     class="card__price text--medium">Randevu Al</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
             </main>
         </div>
