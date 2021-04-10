@@ -45,7 +45,7 @@ class Astroturf extends Observer {
         var name = this.name;
         name = name.toLowerCase();
         var result = name.indexOf(data.toLowerCase());
-
+        
         if (result == -1) {
             this.element.style.display = "none";
         } else {
