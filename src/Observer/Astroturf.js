@@ -23,11 +23,13 @@ class Astroturf extends Observer {
             '<img src="' + this.image1 + '" alt="saha resmi">' +
             '</div >' +
             '<div class="card__content">' +
+            '<div class="card__konum">'+
+            '<p id="marker" class="fas fa-map-marker-alt"></p> ' + this.city + '</p>' + '</div>' +
             '<p class="card__title text--medium">' +
             this.name +
             '</p>' +
             '<div class="card__aciklama">' +
-            '<p>' + this.city + '</p>' + //Normalde burada this.info yer alıyor.
+            '<p>' + this.info + '</p>' +
             '</div >' +
             '<div class="card__info">' +
             '<p class="fiyat">' + this.price + '</p>' +
