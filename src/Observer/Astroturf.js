@@ -1,6 +1,6 @@
 import Observer from '../lib/Observer.js';
 class Astroturf extends Observer {
-    constructor(name, className, info, price, image1, image2) {
+    constructor(name, className, info, price, image1, image2, city) {
         super();
         this.name = name;
         this.className = className;
@@ -8,6 +8,7 @@ class Astroturf extends Observer {
         this.price = price;
         this.image1 = image1;
         this.image2 = image2;
+        this.city = city;
         this.element = null;
     }
 
@@ -26,7 +27,7 @@ class Astroturf extends Observer {
             this.name +
             '</p>' +
             '<div class="card__aciklama">' +
-            '<p>' + this.info + '</p>' +
+            '<p>' + this.city + '</p>' + //Normalde burada this.info yer alıyor.
             '</div >' +
             '<div class="card__info">' +
             '<p class="fiyat">' + this.price + '</p>' +
@@ -43,10 +44,12 @@ class Astroturf extends Observer {
     update(data) {
         //Eğer postun içinde kendi karakterleri eşleşmiyorsa kendini gizleyecek.
         var name = this.name;
+        var city = this.city;
         name = name.toLowerCase();
-        var result = name.indexOf(data.toLowerCase());
-        
-        if (result == -1) {
+        city = city.toLowerCase();
+        var resultName = name.indexOf(data.toLowerCase());
+        var resultCity = city.indexOf(data.toLowerCase());
+        if (resultName == -1 && resultCity == -1) {
             this.element.style.display = "none";
         } else {
             this.element.style.display = "";

@@ -107,6 +107,12 @@ input:focus{
 	text-decoration: none;
 	margin: 20px;
 	margin-left: 240px;	
+	border-bottom:solid 1px white;
+	
+
+}
+.menu i {
+	display: none;
 }
 .kullanıcı-logo {
 	width: 220px;
@@ -242,8 +248,8 @@ input:focus{
 }
 
 .ozellikler-baslık {
-	font-size: 50px;
-	margin-left: 7.5%;
+	font-size: 60px;
+	margin-left:15%;
 	margin-top: 5%;
 	width: 100%;
 	font-family: 'Roboto Condensed';
@@ -297,7 +303,7 @@ input:focus{
 	font-size: 25px;
 	margin-top: 5px;
 	font-weight:bold;
-	font-weight:100;
+	font-weight:300;
 	font-family: 'Roboto Condensed';
 }
 
@@ -368,110 +374,202 @@ input:focus{
 	font-weight:bold;
 	font-weight:300;
 }
-
-
-
- /* TABLET Görünüm kodlarımız */
-@media only screen and (max-width: 992px) {
-.sehirler {
-	flex-wrap: wrap;
-justify-content: center;
+#kontrol {
+	display: none;
 }
-	.sehirler-orta {
-		width: 30%;
-	}
-		.sehirler-isim {
-		font-size: 15px;
-	}
-	.sehirler-kullanıcı {
-		font-size: 15px;
-	}
-	.ozellikler {
-	flex-wrap: wrap;
-justify-content: center;
+	.menu i {
+  		display: none;
+  		position: relative;
+  		cursor: pointer;
+  		color: white;
+  		font-size: 35px;
+  		line-height:0;
+  		padding: 10px;
+  		color: white;
+  	}
+.saha-bs {
+	width: 100%;
 }
-	.ozellikler-orta {
-		width: 30%;
-	}
-	.ozellikler-baslık {
-		font-size: 45px;
-		align-items: center;
-	}
-.sahalar {
-	flex-wrap: wrap;
-justify-content: center;
-}
-	.sahalar-orta {
-		width: 40%;
-	}
-
-	.kayıt {
-	flex-wrap: wrap;
-justify-content: center;
-}
-	.kayıt-orta {
-		width: 40%;
-	}
-}
-
-
-/* CEP TELEFONU Görünüm kodlarımız */
+/*------------------ CEP TELEFONU Görünüm kodlarımız ------------------*/
  
   @media only screen and (max-width: 768px){  
+  	.menu i {
+  		display: block;
+  	}
+  	.menu_bar {
+  		justify-content: space-between;
+  	}
+  	.menu {
+  		margin-left: 5%;
+  	}
+  	.menu ul {
+  		position:fixed;
+  		width: 100%;
+  		height: 50vh;
+  		left: -100%;
+  		transition: all.5s;
+  	}
+  	.menu ul li {
+  		display: block;
+  	}
+  	.menu ul li a{
+  		font-size: 20px;
+  	}
+  	 #kontrol:checked ~ ul {
+  	 	left: 0;
+  	 }
+
+.logo {
+	width: 0;
+}
+.logo img {
+	width: 0;
+}
+.kullanıcı-logo {
+	margin-right: 5%;
+	margin-top: 5px;
+}
+.menu_resim p {
+	width: 100%;
+	font-size:60px;
+	margin-top: 410px;
+}
+  
+/*sehirler mobil css*/
     .sehirler {
 	flex-wrap: wrap;
 justify-content: center;
+margin-right: 4%;
 }
 	.sehirler-orta {
-		width: 35%;
+		width: 40%;
 	}
 	.sehirler-isim {
 		font-size: 15px;
 	}
 	.sehirler-kullanıcı {
-		font-size: 15px;
+		font-size: 12px;
 	}
+	
+	/*   */
+.ozellikler {
+	display:flex;
+ 	width: 100%;
+ 	flex-flow: nowrap;
+  	overflow-x: scroll;
+	}
+	.ozellikler::-webkit-scrollbar{
+  		display: none;
+		}
 		.ozellikler {
-	flex-wrap: wrap;
-justify-content: center;
-}
-	.ozellikler-orta {
-		width: 30%;
+  	-ms-overflow-style:none;
+			}
+	.ozellikler-orta{
+	display:block;
+  	white-space: nowrap;
+  	width: 100%;
+  	padding: 20px;
 	}
-.ozellikler-baslık {
-		font-size: 45px;
-		align-items: center;
+	.ozellikler-icerik {
+		width: 20%;
+	display: inline-block;
 	}
-  .sahalar {
-	flex-wrap: wrap;
-justify-content: center;
-}
-	.sahalar-orta {
-		width: 50%;
+	.ozellikler-icerik p  {
+		font-size: 25px;
 	}
-.sahalar-baslık {
-		font-size: 45px;
-		align-items: center;
+	.ozellikler-icerik img {
+		min-width: 230px;
+		min-height:	200px;
+		 object-fit: cover;	
 	}
-	.kayıt{
-	flex-wrap: wrap;
-justify-content: center;
-}
-	.kayıt-orta {
-		width: 50%;
+	.ozellikler-baslık {
+		width: 100%;
+		font-size: 32px;
 	}
 
+
+
+/*sahalar mobil css*/
+	.sahalar {
+	display:flex;
+ 	min-width: 100%;
+ 	flex-flow: nowrap;
+  	overflow-x: scroll;
+	}
+	.sahalar::-webkit-scrollbar{
+  		display: none;
+		}
+		.sahalar {
+  	-ms-overflow-style:none;
+			}
+	.sahalar-orta{
+	display:block;
+  	white-space: nowrap;
+  	width: 100%;
+  	padding: 20px;
+	}
+	.sahalar-icerik {
+		width: 100%;
+	display: inline-block;
+	}
+	.sahalar-icerik p  {
+		font-size: 25px;
+		font-weight:bold;
+		font-weight:300;
+		font-family: 'Roboto Condensed';
+	}
+	.sahalar-icerik img {
+		min-width: 230px;
+		min-height:	200px;
+		 object-fit: cover;	
+	}
+	.sahalar-baslık{
+		display: none;
+	}
+	.sahalar-baslık2{
+		display: none;
+	}
+
+
+/* kayıt mobil css*/
+.kayıt {
+	display: flex;
+		width: 100%;
+ 	flex-flow: nowrap;
+  	overflow-x: scroll;
 }
+.kayıt::-webkit-scrollbar{
+  		display: none;
+		}
+		.kayıt {
+  	-ms-overflow-style:none;
+			}
+.kayıt-orta{
+	display:block;
+  	white-space: nowrap;
+  	width: 70%;
+  	padding: 20px;
+	}
+	.kayıt-icerik {
+		width: 100%;
+	display: inline-block;
+	}
+	.kayıt-icerik p  {
+		font-size: 30px;
+	}
+		.kayıt-icerik img {
+		width: 230px;
+		height: 200px;
+		 object-fit: cover;	
+	}
 
-@media screen and (max-width: 600px) {
-
-    .search-bar{
-        width: 95vw;
+.search-bar{
+        width: 75vw;
         height: 60px;
         box-shadow: 0 16px 32px rgba(0, 0, 0, .30);
         border-radius: 50px;
-        margin-left: 0vw;
-        margin-top: 15vh;
+        margin-left: 12vw;
+        margin-top: 3vh;
         background-color: white;
     }
     
@@ -515,4 +613,34 @@ justify-content: center;
         margin-left: 8px;
         transform: rotate(280deg);
     }
+    .kullanıcı {
+	display:flex;
+ 	min-width: 100%;
+ 	flex-flow: nowrap;
+  	overflow-x: scroll;
+	}
+	.kullanıcı::-webkit-scrollbar{
+  		display: none;
+		}
+		.kullanıcı {
+  	-ms-overflow-style:none;
+			}
+	.kullanıcı-orta{
+	display:block;
+  	white-space: nowrap;
+  	width: 100%;
+  	padding: 20px;
+	}
+	.kullanıcı-icerik {
+		width: 100%;
+	display: inline-block;
+	}
+.kullanıcı p {
+	font-size: 20px;
 }
+
+}
+
+
+
+ 
