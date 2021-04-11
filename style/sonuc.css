@@ -346,6 +346,7 @@ font-family: "Roboto Condensed";
   padding: 10px 15px;
   font-size: 20px;
   bottom: 0;
+  border: none;
 }
 
 }
@@ -375,6 +376,7 @@ font-family: "Roboto Condensed";
   padding: 5px 5px;
   font-size: 20px;
   width:52%;
+  border: none;
 }
 }
 @media only screen and (max-width: 1130px) {
@@ -384,6 +386,7 @@ font-family: "Roboto Condensed";
   .card__price {
     padding: 5px 10px;
     font-size: 20px;
+    border: none;
   }
   .sabit_fitreler{
     margin-top: 2%;
@@ -397,6 +400,7 @@ font-family: "Roboto Condensed";
   .card__price {
     padding: 5px 10px;
     font-size: 20px;
+    border: none;
   }
  
 }
@@ -478,6 +482,7 @@ main {
 .card__price {
   padding: 5 15px;
   font-size: 20px;
+  border: none;
 }
 button.outlined {
   display:none;
@@ -541,6 +546,7 @@ button.outlined {
 }
 .card__price {
   padding: 5px 10px;
+  border: none;
 }
 
 }
@@ -637,6 +643,7 @@ button.outlined {
   padding: 5px 5px;
   font-size: 22px;
   width:58%;
+  border: none;
 }
 .fiyat {
   font-size: 18px;
@@ -739,6 +746,7 @@ button.outlined {
     font-size: 19px;
     font-weight: 500;
     width:55%;
+    border: none;
   }
   .fiyat {
     font-size: 18px;
