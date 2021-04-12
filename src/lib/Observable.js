@@ -4,6 +4,7 @@ class Observable {
         this.observers = [];
     }
 
+
     isSubscribed(f) {
         return this.observers.filter(subscriber => subscriber === f).length;
     }
