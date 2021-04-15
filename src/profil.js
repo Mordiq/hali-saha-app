@@ -35,7 +35,9 @@ window.onload = function () {
 
         var pageUrl = new URL(document.getElementById("pp").src);
         url = pageUrl.pathname.split("/");
-        url = "../" + url[2] + "/" + url[3];
+        //url = "../" + url[2] + "/" + url[3];
+
+        url = "../" + url[url.length - 2] + "/" + url[url.length - 1];
 
         document.getElementById("pp").src = url;
     };
