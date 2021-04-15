@@ -3,7 +3,12 @@ class Search extends Observable {
     constructor() {
         super();
     }
-    addPostInList(post) {
+
+    get Observers() {
+        return this.observers;
+    }
+
+    addPostOnList(post) {
         this.subscribe(post);
     }
     updateList(posts) {
