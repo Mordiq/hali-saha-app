@@ -1,11 +1,35 @@
 import Astroturf from "./Observer/Astroturf.js";
 import Search from "./Observable/Search.js";
 import Filter from "./Observable/Filter.js";
+<<<<<<< HEAD
 import { girisKontrol } from "./kullanici-giris.js";
+=======
+window.onload = function () {
+    var user;
+    if (localStorage.getItem("auth-user") != null) {
+        user = localStorage.getItem("auth-user");
+
+        console.log("Giriş yapan kullanıcı : " + user);
+        var girislinkleri = document.getElementsByClassName("giris-linkleri");
+        for (var i = 0; i < girislinkleri.length; i++) {
+            girislinkleri[i].style.display = 'none';
+        }
+
+        var kullanicilinkleri = document.getElementsByClassName("kullanici-linkleri");
+>>>>>>> 2d08172bcfd4bcbed36ee7c276dbab0a1018c9c4
 
 window.onload = function () {
 
+<<<<<<< HEAD
     girisKontrol();
+=======
+        for (var i = 0; i < kullanicilinkleri.length; i++) {
+            kullanicilinkleri[i].style.cssText = 'display:none !important;';
+        }
+
+        window.location.replace("../index.html");
+    }
+>>>>>>> 2d08172bcfd4bcbed36ee7c276dbab0a1018c9c4
 
     var search = new Search();
 
