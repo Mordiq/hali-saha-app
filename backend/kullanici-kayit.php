@@ -11,7 +11,7 @@ if ($_POST){ // Sayfada post olup olmadığını kontrol ediyoruz.
     $sifre = $_POST['sifre'];
     $kullaniciadi = $_POST['kullaniciadi'];
     $gruplar = "[]";
-
+    $profilfotografi = "../assets/images/default.jpg";
     if($adisoyadi <> "" && $email <> ""){
 
         $kayitkontrol = $db -> prepare("SELECT * FROM kullanici WHERE email=? ");
@@ -28,8 +28,8 @@ if ($_POST){ // Sayfada post olup olmadığını kontrol ediyoruz.
         }else{
             //print_r($kontrol -> errorInfo());
             echo "else bloguna girdi";
-            $kayit = $db -> prepare("INSERT INTO kullanici SET adisoyadi=?, email=?,gruplar=?, sifre=?, kullaniciadi=?");
-            $kayit -> execute(array($adisoyadi ,$email,$gruplar, $sifre, $kullaniciadi));
+            $kayit = $db -> prepare("INSERT INTO kullanici SET adisoyadi=?, email=?,gruplar=?, sifre=?, kullaniciadi=?,profilfotografi=?");
+            $kayit -> execute(array($adisoyadi ,$email,$gruplar, $sifre, $kullaniciadi,$profilfotografi));
 
             if($kayit -> rowCount()){
                 echo "Kayıt Başarılı";
