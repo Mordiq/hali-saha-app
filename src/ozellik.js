@@ -11,9 +11,8 @@ export async function ozellikleriGetir() {
 
     oReq.onload = function () {
         console.log("Özellikler sonuc : " + this.response);
-        results = JSON.parse(this.response);
+        results = JSON.parse(oReq.response);
         console.log("Results => " + results[0]["ozellikadi"])
-
         sonuc();
 
     }

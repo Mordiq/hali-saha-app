@@ -1,9 +1,3 @@
-window.onload = function () {
-
-
-
-
-}
 
 
 export function giris(email, sifre) {
@@ -28,4 +22,31 @@ export function giris(email, sifre) {
             window.location.replace("./pages/sonuc.html");
         }
     };
+}
+
+export function girisKontrol() {
+    var user;
+    if (localStorage.getItem("auth-user") != null) {
+        user = localStorage.getItem("auth-user");
+
+        console.log("Giriş yapan kullanıcı : " + user);
+        var girislinkleri = document.getElementsByClassName("giris-linkleri");
+        for (var i = 0; i < girislinkleri.length; i++) {
+            girislinkleri[i].style.display = 'none';
+        }
+
+        var kullanicilinkleri = document.getElementsByClassName("kullanici-linkleri");
+
+        for (var i = 0; i < kullanicilinkleri.length; i++) {
+            kullanicilinkleri[i].style.display = 'display: block !important;';
+        }
+    } else {
+        var kullanicilinkleri = document.getElementsByClassName("kullanici-linkleri");
+
+        for (var i = 0; i < kullanicilinkleri.length; i++) {
+            kullanicilinkleri[i].style.cssText = 'display:none !important;';
+        }
+
+        window.location.replace("../index.html");
+    }
 }
