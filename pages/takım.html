@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="../style/takım.css" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <script type="module" src="../src/deneme2.js"></script>
+         <script type="text/javascript" src="../src/dropmenu.js"></script>
+</head>
+<body>
+    <div class="kapsa">
+       
+
+            <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" onclick=document.location='index.html' alt="Logo" />
+        </div>
+
+        <div class="search-bar">
+            <input id="search-input" type="text" class="arama-input" name="arama" placeholder="Şehrinizi Arayın">
+            <div class="arama-button">
+                <i class="las la-search" id="arama-icon"></i>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i id="baba" class="las la-bars"></i>
+                    <i id="bobo" class="fas fa-user-circle"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="giris-linkleri" href="#">Kullanıcı Giriş</a>
+                    <a class="giris-linkleri" href="#">Halı Saha Giriş</a>
+                    <a class="giris-linkleri" href="#">Kullanıcı Kaydı</a>
+                    <a class="giris-linkleri" href="#">Halı Saha Kaydı</a>
+
+                    <a href="#" class="kullanici-linkleri">Takım Oluştur</a>
+                    <a href="#" class="kullanici-linkleri">Bildirimler</a>
+                    <a href="#" class="kullanici-linkleri"> Profil</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header1">
+       
+    </div>
+    <div class="baslık">
+        <p>Takımlarım</p>
+    </div>
+    <div class="banner">
+        <div class="banner-orta">
+           <div class="banner-icerik ">
+                <div class="banner-pencere">
+                    <p>Test Takımı</p> 
+                </div>
+<!--  --><!--  -->  <!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
+                <div class="banner-kisiler">
+                  <div class="banner-kisiler-img">
+                  <img src="../assets/img/izmir.png" />
+                  </div>
+                  <div class="banner-kisi">
+                        Özgür Kurucan
+                  </div>
+                  <div class="banner-icon">
+                   <button class="icon-sil"><i class="fa fa-trash"></i></button>
+                  </div>
+                </div>
+<!--  --><!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
+                <div class="banner-kisiler">
+                   <div class="banner-kisiler-img">
+                  <img src="../assets/img/izmir.png" />
+                  </div>
+                  <div class="banner-kisi">
+                        Özgür Kurucan
+                  </div>
+                  <div class="banner-icon">
+                   <button class="icon-sil"><i class="fa fa-trash"></i></button>
+                  </div>
+                </div>
+<!--  --><!--  --><!--  --><!--  --><!--  --><!--  -->
+                 <div class="banner-kisiler">
+                   <div class="banner-kisiler-img">
+                  <img src="img/izmir.png" />
+                  </div>
+                  <div class="banner-kisi">
+                        Özgür Kurucan
+                  </div>
+                  <div class="banner-icon">
+                   <button class="icon-sil"><i class="fa fa-trash"></i></button>
+                  </div>
+                </div>
+           </div>
+           <!-- ekle butonları -->
+         <div class="banner-ekle-sil">
+            <div class="banner-ekle">
+             <button id="ekle">Oyuncu Ekle </button>
+                  <!--   --><div id="ekleModal" class="eklepopup">
+  <!-- eklepopup content -->  <!-- eklepopup content -->  <!-- eklepopup content -->
+
+  <div class="eklepopup-content">
+    <span class="close">&times;</span>
+  <div class="pencere-kapsa">
+    <div class="pencere-orta">
+      <div class="pencere-icerik">
+        <div class="pencere-baslik">
+          Yeni Takım İçin Oyuncu Ekle
+        </div>
+        <div class="pencere-selectbar">
+            <div class="search-bar1">
+                <input type="text" class="arama1-input" name="arama1" placeholder="Kişi arayın">
+                <div class="arama-button1">
+                    <i class="las la-search" id="arama-icon"></i>
+                </div>
+            </div>
+        </div>
+        <!-- ÜYELER -->
+        <div class="pencere-uyeler-kapsa">
+        <div class="pencere-uyeler">
+          <div class="pencere-uye-dis">
+            <div class="pencere-uye-resim">
+            </div>
+            <div class="pencere-uye-ad">
+              <p class="pencere-ad1">Ad Soyad</p>
+              <p class="pencere-ad2">@kullanici adi</p>
+            </div>
+            <div class="pencere-icon">
+              <button class="pencere-iconp">+</button>
+            </div>
+          </div>
+            </div>
+         <!-- ÜYELER BİTİŞ -->
+          <!-- ÜYELER -->
+        <div class="pencere-uyeler">
+          <div class="pencere-uye-dis">
+            <div class="pencere-uye-resim">
+            </div>
+            <div class="pencere-uye-ad">
+              <p class="pencere-ad1">element.adisoyadi</p>
+              <p class="pencere-ad2">@kullanici adi</p>
+            </div>
+            <div class="pencere-icon">
+              <button class="pencere-iconp">+</button>
+            </div>
+          </div>
+            </div>
+         <!-- ÜYELER BİTİŞ -->
+          <!-- ÜYELER -->
+        <div class="pencere-uyeler">
+          <div class="pencere-uye-dis">
+            <div class="pencere-uye-resim">
+            </div>
+            <div class="pencere-uye-ad">
+              <p class="pencere-ad1">Ad Soyad</p>
+              <p class="pencere-ad2">@kullanici adi</p>
+            </div>
+            <div class="pencere-icon">
+          <button class="pencere-iconp">+</button>
+            </div>
+          </div>
+            </div>
+         <!-- ÜYELER BİTİŞ -->
+          <!-- ÜYELER -->
+        <div class="pencere-uyeler">
+          <div class="pencere-uye-dis">
+            <div class="pencere-uye-resim">
+            </div>
+            <div class="pencere-uye-ad">
+              <p class="pencere-ad1">Ad Soyad</p>
+              <p class="pencere-ad2">@kullanici adi</p>
+            </div>
+            <div class="pencere-icon">
+            <button class="pencere-iconp">+</button>
+            </div>
+          </div>
+            </div>
+        </div>
+         <!-- ÜYELER BİTİŞ -->
+        
+        </div>   
+      </div>
+    </div>
+
+  </div>
+
+</div> </div>
+          
+             <div class="banner-sil">
+                 <button class="sil">Takımı Sil </button>
+            </div>
+         </div>
+    </div>
+
+       <div class="banner-orta">
+           <div class="banner-icerik ">
+           </div>
+    </div>
+
+     <div class="banner-orta">
+           <div class="banner-icerik ">
+           </div>
+   
+    </div>
+     <div class="banner-orta">
+           <div class="banner-icerik ">
+
+           </div>
+   
+    </div>
+</div>
+
+<div class="son">
+    </div>
+
+</div>
+<script>
+ 
+var eklepopup = document.getElementById("ekleModal");
+
+
+var btn = document.getElementById("ekle");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+  eklepopup.style.display = "block";
+}
+
+
+span.onclick = function() {
+  eklepopup.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == eklepopup) {
+    eklepopup.style.display = "none";
+  }
+}
+</script>>
+
+
+
+</body>
+</html>
