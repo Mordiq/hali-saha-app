@@ -1537,7 +1537,6 @@ function dosyalariGetir() {
     return files;
 }
 
-
 function resimleriYukle(fileForm, file) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "./backend/image_upload.php", true);
@@ -1573,8 +1572,6 @@ function sahaKayit() {
     var adres = document.getElementById("adres").value;
     console.log("Form : " + sahaadi + " " + email + " " + sifre + " " + il + " " + ilce + " adres : " + adres);
     console.log("ilçe " + ilce);
-
-
 
     var formData = new FormData();
 
@@ -1625,6 +1622,12 @@ function onizleme() {
         image2.appendChild(i2);
 
     }
+
+
+    
+
+
+
 }
 
 
