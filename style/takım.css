@@ -347,9 +347,9 @@ height: 95px;
 .pencere-baslik{
   width:100%;
   font-size:50px;
-   margin-top:10px;
+  margin-top:10px;
   text-align:center;
-   font-weight:bold;
+  font-weight:bold;
   font-weight:300;
 }
 .pencere-selectbar{
@@ -466,4 +466,30 @@ input:focus{
     margin-top: 8px;
     margin-left: 8px;
     transform: rotate(280deg);
+}
+
+.takim-ekleme-arti-button{
+  width: 50px;
+  height: 50px;
+  background-color: #0ACC6E  !important;
+  border-radius: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  z-index: 1;
+  bottom:10px;
+  right: 10px;
+}
+
+#plus-button-icon{
+  font-size: 35px;
+  padding-left: 8px;
+  padding-top: 8px;
+  color: white;
+}
+
+
+.takim-liste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

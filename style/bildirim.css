@@ -1,0 +1,63 @@
+.bildirim-listesi{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.container{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.bildirim{
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #0ACC6E;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.3);
+    margin-left: 50px;
+}
+
+.kapat-container{
+    width: 100%;
+    height: 30px;
+}
+
+.bildirim-kapat{
+    width: 20px;
+    height: 20px;
+    background-color: #E61E4D;
+    border-radius: 100%;
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#bildirim-kapat-icon{
+    color: white;
+    padding-left: 3px;
+    padding-top: 3.5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bildirim-mesaj-container{
+    /* border: 1px solid red; */
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+p.bildirim-mesaj{
+    font-family: 'Roboto';
+    font-weight: 300;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 22px;
+    color: white;
+}

@@ -44,12 +44,41 @@ window.onload = function () {
 
 
                 response.forEach(element => {
-                    var saha = new Astroturf(element.sahaadi, "card", element.aciklama, "88 TL", element.resim1, element.resim2, element.sehir + "/" + element.ilce, element.ozellikler);
+                    var saha = new Astroturf(element.id, element.sahaadi, "card", element.aciklama, "88 TL", element.resim1, element.resim2, element.sehir + "/" + element.ilce, element.ozellikler);
                     saha.render();
                     search.addPostOnList(saha);
                     console.log(element.sahaadi);
                 });
 
+                //Randevu Alma Kısmı
+
+               
+
+                var eklebutonlar = document.getElementsByClassName("card__price");
+                var parametreler = "data-sahaid=";
+                    for (var i = 0; i < eklebutonlar.length; i++) {
+                        eklebutonlar[i].addEventListener("click",function(e) {
+                            var xhr = new XMLHttpRequest();
+                            xhr.open("GET", "./randevu.html?" + parametreler, true);
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState == 4 && xhr.status == 200) {
+                                    //alert(xhr.response)
+                                    window.location.replace(xhr.responseURL);
+                                    //alert(e.target.getAttribute("data-sahaid"))
+                                }
+                            }
+
+                            xhr.send(null);
+                    //Burada randevu almak için post işlemi kodu olacak .
+                   
+                        })
+
+                    } 
+
+            }
+        }
+        oReq.open("GET", "../backend/sahalari-getir.php");
+        oReq.send();
 
             }
         }

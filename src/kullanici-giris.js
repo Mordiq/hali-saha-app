@@ -19,6 +19,7 @@ export function giris(email, sifre) {
         if (res == "true") {
             //Buraya Uygulamanın Arama Sayfası linki verilecek.
             localStorage.setItem("auth-user", email);
+
             window.location.replace("./pages/sonuc.html");
         }
     };

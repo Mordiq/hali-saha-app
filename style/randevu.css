@@ -1,0 +1,770 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+color: rgb(0, 0, 0);
+margin: 0;
+font-size: 14px;
+letter-spacing: normal;
+line-height: 18px;
+-webkit-font-smoothing: antialiased;
+}
+
+.header {
+height: 95px;
+padding-left: 5%;
+padding-right: 5%;
+display: flex;
+align-items: center;
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+justify-content: space-between;
+position: fixed;
+width: 100%;
+z-index: 1;
+background: rgb(255, 255, 255);
+}
+
+
+.header__logo {
+  cursor:pointer;
+}
+.header__nav {
+display: flex;
+justify-content: flex-end;
+}
+
+.main {
+position: relative;
+padding-top: 4%;
+}
+
+.main__content {
+height: 100%;
+width: 100%;
+font-family: 'Roboto Condensed';
+}
+.search-bar{
+  width: 30vw;
+  height: 60px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, .03);
+  border-radius: 50px;
+  margin-left: 5vw;
+  margin-top: 1vh;
+  background-color: white;
+  border: 0.5px solid #ebebeb;
+}
+
+.search-bar > input{
+  float: left;
+}
+
+input[name="arama"]{
+  width: 70%;
+  height: 40px;
+  border: none;
+  font-size: 25px;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-left: 15px;
+  font-family: 'Roboto Condensed';
+}
+
+input:focus{
+  outline: none;
+}
+
+.arama-button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #0ACC6E;
+  float: right;
+  margin-right:5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#arama-icon{
+  font-size: 35px;
+  color: white;
+  margin-top: 8px;
+  margin-left: 8px;
+  transform: rotate(280deg);
+}
+
+.dropbtn {
+  margin-left: 100px;
+  border: 0.3px solid #dadada;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 1px 0 0 19px;
+  transition: box-shadow 0.2s ease;
+    height:50px;
+    width: 100px;
+    display:flex;
+    flex-direction: row;
+    outline:none;
+  } 
+  #bobo {
+    color:#707070;
+    font-size: 35px;
+      margin-top: 5px;
+      margin-left: 7px;
+  }
+  #baba {
+    color:#020000;
+    font-size: 25px; 
+    margin-top: 12px;
+  } 
+
+  .dropbtn:hover, .dropbtn:focus {
+  background-color: #e9e9e9;
+  }
+  
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  margin-left: -20px;
+  margin-top: 10px;
+  min-width: 220px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto Condensed';
+  }
+
+  .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  .show {display:block;}
+
+
+main {
+display: grid;
+grid-template-columns: 1fr repeat(11, minmax(auto, 100px)) 1fr;
+grid-gap: 45px;
+padding: 40px 0;
+}
+
+.tarih {
+  margin-top: 2vw;
+  margin-left: 9vw;
+  font-family: 'Roboto Condensed';
+}
+
+.saatler {
+grid-column: 2 / span 11;
+display: grid;
+grid-template-columns: repeat(9, minmax(auto, 100px));
+grid-gap: 18px;
+background-color: #ffffff;
+margin-left: 1vw;
+}
+
+.saat {
+grid-column-end: span 4;
+display: flex;
+flex-direction: column;
+background-color: #0ACC6E;
+transition: all 0.3s ease 0s;
+box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+border-radius: 3px;
+border-style: none;
+padding: 12px 24px;
+color:white;
+font-size: 18px;
+font-family: 'Roboto Condensed';
+font-weight: 600;
+}
+
+.tarih-buton-sol{
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  background-color: #00aeff;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+
+.tarih-buton-sag{
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
+  background-color: #00aeff;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+
+#tarih-icon{
+  font-size: 45px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.saharesmi {
+  background-color: tomato;
+  width: 100%;
+  margin-top: 5px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.saharesmi img {
+  width: 100vw;
+  height: 20vw;
+  display:block;
+}
+
+.randevu {
+  margin: 3vw;
+}
+
+.dolu {
+  background-color: #f80000;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border-style: none;
+  padding: 12px 24px;
+  color:white;
+  }
+
+  .bos {
+    background-color: #0ACC6E;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-style: none;
+    padding: 12px 26px;
+    color:white;
+    margin-top: 1vw;
+    }
+
+    .saha-ad {
+      position: absolute;
+      bottom: 25px;
+      left: 16px;
+      font-size: 55px;
+      font-family: 'Roboto Condensed';
+    }
+
+    @media only screen and (max-width: 2000px) {
+
+      .randevu {
+        margin-left: 15vw;
+        margin-right: 18vw;
+      }
+      
+      .tarih {
+        margin-left: 7vw;
+      }
+
+      }
+      
+      @media only screen and (max-width: 1500px) {
+
+        .tarih {
+          margin-top: 2vw;
+          margin-left: 9vw;
+          font-family: 'Roboto Condensed';
+        }
+        
+        .saatler {
+        grid-column: 2 / span 11;
+        display: grid;
+        grid-template-columns: repeat(9, minmax(auto, 100px));
+        grid-gap: 18px;
+        background-color: #ffffff;
+        margin-left: 1vw;
+        }
+        
+        .saat {
+        grid-column-end: span 4;
+        display: flex;
+        flex-direction: column;
+        background-color: #0ACC6E;
+        transition: all 0.3s ease 0s;
+        box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        border-style: none;
+        padding: 12px 24px;
+        color:white;
+        font-size: 18px;
+        font-family: 'Roboto Condensed';
+        font-weight: 600;
+        }
+        
+        .tarih-buton-sol{
+          width: 65px;
+          height: 65px;
+          border-radius: 50px;
+          background-color: #00aeff;
+          margin-top: 1vw;
+          cursor: pointer;
+        }
+        
+        .tarih-buton-sag{
+          width: 65px;
+          height: 65px;
+          border-radius: 50px;
+          background-color: #00aeff;
+          margin-top: 1vw;
+          cursor: pointer;
+        }
+        
+        #tarih-icon{
+          font-size: 45px;
+          color: white;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+        
+        .saharesmi {
+          background-color: tomato;
+          width: 100%;
+          margin-top: 5px;
+          position: relative;
+          text-align: center;
+          color: white;
+        }
+        
+        .saharesmi img {
+          width: 100vw;
+          height: 20vw;
+          display:block;
+        }
+        
+        .randevu {
+          margin: 3vw;
+        }
+
+      }
+      
+
+      
+      @media only screen and (max-width: 785px){
+      
+        .main__content h1{
+          margin-top: 6vh;
+        }
+        
+        .search-bar{
+          width: 90vw;
+          height: 60px;
+          box-shadow: 0 16px 32px rgba(0, 0, 0, .05);
+          border-radius: 50px;
+          margin-left: 5vw;
+          margin-top: 1vh;
+          background-color: white;
+          border: 0.5px solid #eeeeee;
+        }
+      
+        input[name="arama"]{
+          width: 70%;
+          height: 40px;
+          border: none;
+          font-size: 18px;
+          margin-top: 10px;
+          padding-left: 10px;
+          margin-left: 15px;
+          font-family: 'Roboto Condensed';
+        }
+        
+        .arama-button{
+          width: 35px;
+          height: 35px;
+          border-radius: 50px;
+          background-color: #0ACC6E;
+          float: right;
+          margin-right:5px;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+        
+        #arama-icon{
+          font-size: 20px;
+          color: white;
+          margin-top: 8px;
+          margin-left: 8px;
+          transform: rotate(280deg);
+        }
+      }
+      
+      @media only screen and (max-width: 700px) {
+      main {
+        grid-gap: 20px;
+        
+      }
+      .main__content h1 {
+        font-size: 25px;
+        margin-top: 10%;
+        margin-left: 1%;
+        
+      }
+      .dropbtn {
+        font-size: 20px;
+      }
+      .dropdown-content{
+        float:left;
+      }
+
+      .dropbtn {
+        border: 0.5px solid #cccccc;
+        cursor: pointer;
+        border-radius: 42px;
+        margin-right: 18px;
+        padding: 1px 0 0 11px;
+        transition: box-shadow 0.2s ease;
+        height:35px;
+        width: 71px;
+        display:flex;
+        flex-direction: row;
+        } 
+        #bobo {
+          color:#707070;
+          font-size: 25px;
+          margin-left: 5px;
+          margin-top: 3px;
+        }
+        #baba {
+          color:#020000;
+          font-size: 23px; 
+          margin-top: 5px;
+        } 
+      }
+      
+      @media only screen and (max-width: 500px) {
+      main {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+      }
+      .header__logo {
+        display:none;
+      }
+      .main__content h1 {
+        font-size: 23px;
+        margin-top: 20%;
+        margin-left: 15%;
+      }
+      
+      }
+      @media only screen and (max-width: 420px) {
+      main {
+        grid-template-columns: 1px repeat(1, 1fr) 1px;
+      }
+      .header {
+        height: 70px;
+      }
+      .header__logo {
+        display:none;
+      }
+      .search-bar{
+        width: 500px;
+        height: 50px;
+        box-shadow: 0 16px 32px rgba(0, 0, 0, .03);
+        border-radius: 50px;
+        margin-left: 5vw;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        background-color: white;
+        border: 0.5px solid #eeeeee;
+      }
+      
+      input[name="arama"]{
+        width: 50%;
+        height: 40px;
+        border: none;
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 5px;
+        padding-left: 8px;
+        margin-left: 8px;
+        font-family: 'Roboto Condensed';
+      }
+      
+      .arama-button{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        background-color: #0ACC6E;
+        float: right;
+        margin-right:5px;
+        margin-top: 7px;
+        cursor: pointer;
+      }
+      
+      #arama-icon{
+        font-size: 20px;
+        color: white;
+        margin-top: 8px;
+        margin-left: 8px;
+        transform: rotate(280deg);
+      }
+      
+      .main__content h1 {
+        font-size:22px;
+        margin-top: 10%;
+        margin-left: -15px; 
+        line-height: 25px;
+      }
+      .sabit_fitreler {
+        margin-left: -20px;
+      }
+    
+      }
+      @media only screen and (max-width: 360px) {
+        main {
+          grid-template-columns: 1px repeat(1, 1fr) 1px;
+        }
+        .main__content h1 {
+          width: 40vh;
+        }
+        .header {
+          height: 75px;
+          display:ruby;
+          align-items: center;
+          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+          }
+      
+        .header__logo {
+          display:none;
+        }
+        
+        .search-bar{
+          width: 50%;
+          height: 50px;
+          box-shadow: 0 16px 32px rgba(0, 0, 0, .03);
+          border-radius: 50px;
+          margin-left: 5vw;
+          margin-top: 1vh;
+          margin-bottom: 1vh;
+          background-color: white;
+          border: 0.5px solid #eeeeee;
+        }
+        
+        input[name="arama"]{
+          width: 50%;
+          height: 40px;
+          border: none;
+          font-size: 11px;
+          font-weight: 500;
+          margin-top: 5px;
+          padding-left: 3px;
+          margin-left: 3px;
+          font-family: 'Roboto Condensed';
+        }
+        
+        .arama-button{
+          width: 35px;
+          height: 35px;
+          border-radius: 50px;
+          background-color: #0ACC6E;
+          float: right;
+          margin-right:5px;
+          margin-top: 7px;
+          cursor: pointer;
+        }
+        
+        #arama-icon{
+          font-size: 20px;
+          color: white;
+          margin-top: 8px;
+          margin-left: 8px;
+          transform: rotate(280deg);
+        }
+      
+        }
+      
+        @media only screen and (max-width: 325px) {
+         
+          .search-bar{
+            width: 60%;
+            height: 50px;
+            box-shadow: 0 16px 32px rgba(0, 0, 0, .03);
+            border-radius: 50px;
+            margin-left: 5vw;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            background-color: white;
+            border: 0.5px solid #eeeeee;
+          }
+          
+          input[name="arama"]{
+            width: 60%;
+            height: 40px;
+            border: none;
+            font-size: 11px;
+            font-weight: 500;
+            margin-top: 5px;
+            padding-left: 2px;
+            margin-left: 2px;
+            font-family: 'Roboto Condensed';
+          }
+          
+          .arama-button{
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            background-color: #0ACC6E;
+            float: right;
+            margin-right:4px;
+            margin-top: 9px;
+            cursor: pointer;
+          }
+          
+          #arama-icon{
+            font-size: 20px;
+            color: white;
+            margin-top: 5px;
+            margin-left: 6px;
+            transform: rotate(280deg);
+          }
+          .header {
+            height: 65px;
+            padding-left: 2%;
+            padding-right: 2%;
+      
+            }
+      
+          }
+  
+          .randevu-form-genel{
+            padding: 0;
+            margin: 0;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: none; /*flex gösterir*/
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(0,0,0,0.2);
+            position: fixed;
+            z-index: 1;
+        }
+
+        .randevu-form{
+          width: 350px;
+          height: 290px;
+          background-color: #ffff;
+          margin-top: 80px;
+          display: flex; 
+          flex-direction: column;
+          align-items: center;
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+          border-radius: 15px;
+          position: fixed;
+          z-index: 1;
+      }
+
+      .randevu-form-kapat{
+        width: 100%;
+        margin-top: 5px;
+        /* border: 1px solid blue; */
+    }
+    
+    .form-kapat-button{
+        width: 100%;
+        margin-top: 5px;
+        /* border: 1px solid blue; */
+    }
+    
+    .hali-saha-giris-formu-kapat-icon{
+        width: 100%;
+        margin-top: 5px;
+        /* border: 1px solid blue; */
+    }
+    .hali-saha-formu-kapat-icon{
+        width: 100%;
+        margin-top: 5px;
+        /* border: 1px solid blue; */
+    }
+    #kapat-icon{
+        color: #ff3e3b;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+        cursor: pointer
+    }
+
+  p.form-baslik{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.fiyat-container{
+  width: 75%;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 35px;
+  padding-left: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  color:#000000;
+  display: flex;
+}
+
+
+.randevu-button{
+  width: 100%;
+  height: 15%;
+  background-color: #ff3e3b;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 30px;
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.randevu-form > input{
+  width: 75%;
+  height: 35px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  border: none;
+  margin-top: 45px;
+  padding-left: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  color: #ff3e3b;
+}
+
+.randevu-form > input:focus{
+  border:none;
+  outline: none;
+}
+
+p.saatlik_fiyat{
+  font-size: 20px;
+  padding-top: 35px;
+  font-weight: 300;
+  margin-left: 95px;
+
+}
+
+
+

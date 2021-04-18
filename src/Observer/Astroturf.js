@@ -1,7 +1,8 @@
 import Observer from '../lib/Observer.js';
 class Astroturf extends Observer {
-    constructor(name, className, info, price, image1, image2, city, skills) {
+    constructor(id, name, className, info, price, image1, image2, city, skills) {
         super();
+        this.id = id;
         this.name = name;
         this.className = className;
         this.info = info;
@@ -36,7 +37,7 @@ class Astroturf extends Observer {
             '<div class="card__info">' +
             '<p class="fiyat">' + this.price + '</p>' +
             '<p class="saat"> / Saat</p>' +
-            '<button class="card__price text--medium">Randevu Al</button>' +
+            '<button id="randevu-alma" class="card__price text--medium" data-sahaid="' + this.id + '">Randevu Al</button>' +
             ' </div >' +
             '</div > ';
 

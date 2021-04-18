@@ -10,7 +10,7 @@ if ($_POST){ // Sayfada post olup olmadığını kontrol ediyoruz.
     $email = $_POST['email'];
     $sifre = $_POST['sifre'];
     $kullaniciadi = $_POST['kullaniciadi'];
-    $gruplar = "[]";
+    $gruplar = "";
     $profilfotografi = "../assets/images/default.jpg";
     if($adisoyadi <> "" && $email <> ""){
 

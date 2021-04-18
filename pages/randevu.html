@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randevu Al</title>
+    <link rel="stylesheet" href="../style/randevu.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="../src/dropmenu.js"></script>
+    <script type="module" src="../src/randevu.js"></script>
+  
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../assets/img/logog.png" onclick=document.location='../index.html' alt="Logo" />
+        </div>
+
+        <div class="search-bar">
+            <input id="search-input" type="text" class="arama-input" name="arama" placeholder="Şehrinizi Arayın">
+            <div class="arama-button">
+                <i class="las la-search" id="arama-icon"></i>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="header__nav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                    <i id="baba" class="las la-bars"></i>
+                    <i id="bobo" class="fas fa-user-circle"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a class="giris-linkleri" href="#">Kullanıcı Giriş</a>
+                    <a class="giris-linkleri" href="#">Halı Saha Giriş</a>
+                    <a class="giris-linkleri" href="#">Kullanıcı Kaydı</a>
+                    <a class="giris-linkleri" href="#">Halı Saha Kaydı</a>
+
+                    <a href="#" class="kullanici-linkleri">Takımlarım</a>
+                    <a href="#" class="kullanici-linkleri">Bildirimler</a>
+                    <a href="#" class="kullanici-linkleri"> Profil</a>
+                    <a href="#" class="kullanici-linkleri" style="color: #E61E4D;"> Çıkış Yap</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main" id="main">
+           <!-- <div class="saharesmi">
+                <img src="../assets/img/11.png" alt="Halı Saha Resmi">
+                <div class="saha-ad"><p class="saha-adi">Halı Saha Adı</p></div>
+            </div>
+      
+    <div class="randevu">
+            <div class="tarih"><h1>14 Nisan</h1></div>
+            <main>
+                <div class="tarih-buton-sol">
+                    <i class="las la-angle-left" id="tarih-icon"></i>
+                </div>
+                <div class="saatler" id="saat-list">
+                    
+                 <div>
+                  <button href="#" class="saat">08:00</button>
+                    </div>
+
+                 <div>
+                    <button class="saat">09:00</button>
+                 </div>
+
+                 <div>
+                   <button class="saat">10:00</button>
+                </div>
+
+                <div>
+                    <button class="saat">11:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">12:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">13:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">14:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">15:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">16:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">17:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">18:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">19:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">20:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat" >21:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">22:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">23:00</button>
+                 </div>
+
+                 <div>
+                    <button class="saat">24:00</button>
+                 </div>
+                 
+                 <div>
+                    <button class="saat">01:00</button>
+                 </div>
+                   
+                </div>
+                <div class="tarih-buton-sag">
+                    <i class="las la-angle-right" id="tarih-icon"></i>
+                </div>
+            </main>
+            <div class="durum-bilgi">
+            <div>
+                <button class="dolu">Dolu</button>
+             </div>
+             <div>
+                <button class="bos">Boş</button>
+             </div>
+        </div> -->
+    </div> 
+    <!-- Randevu Form -->
+    <div class="randevu-form-genel" id="randevu-form-genel">
+      <div class="randevu-form">
+          <div class="randevu-form-kapat" id="kapat">
+              <i class="las la-times" id="kapat-icon"></i>
+          </div>
+          <p class="form-baslik">Randevu</p>
+
+          <input list="browsers" placeholder="Randevu Alacak Takımı Seç" id="saat">
+          <datalist id="browsers">
+            <option value="#">
+            <option value="#">
+            <option value="#">
+            <option value="#">
+            <option value="#">
+          </datalist>
+       
+          <div class="fiyat-container">
+              <p class="saatlik_fiyat" id="saat_fiyat">80₺</p>
+          </div>
+          <button class="randevu-button" id="kullaniciKayitButton">Tamamla</button>
+      </div>
+    </div>
+</div>
+</div>
+  <!-- Randevu Form -->
+  
+  <!-- <script>
+    var url = new URL(window.location);
+    console.log("Gelen Saha Parametresi : " + url.searchParams.get("data-sahaid"));
+    document.getElementById("cevap").textContent = url.searchParams.get("data-sahaid");
+</script>-->
+</body>
+
+</html>

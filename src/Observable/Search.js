@@ -11,6 +11,7 @@ class Search extends Observable {
     addPostOnList(post) {
         this.subscribe(post);
     }
+
     updateList(posts) {
         this.notify(posts);
     }
